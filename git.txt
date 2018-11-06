@@ -1,0 +1,24 @@
+配置用户名和邮箱
+$ git config --global user.name "liyongf"
+
+$ git config --global user.email "619459648@qq.com"
+
+添加和提交
+$ git add hello.txt
+
+$ git commit -m "just test"
+
+生成SSH密钥
+$ ssh-keygen -t rsa -C "619459648@qq.com"
+
+按3个回车，密码为空
+
+C:\Users\user\.ssh目录下找到id_rsa.pub复制里面所有内容
+
+登录你的gihub账号，点击Your profile ,然后点击Edit profile,选择SSH并新建一个SSH Key
+
+添加新的远程仓库
+$ git remote add origin https://github.com/liyongf/mygit.git
+
+远程提交
+$ git push origin master
